@@ -1,0 +1,25 @@
+[project]
+name = "green-prompting-skills-experiment"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Yoshuken", email = "shujianyaozhang@outlook.com" }
+]
+requires-python = ">=3.14"
+dependencies = []
+
+[project.scripts]
+green-prompting-skills-experiment = "green_prompting_skills_experiment:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.4.0",
+    "nbstripout>=0.9.1",
+    "pytest>=9.2.0",
+    "ruff>=0.17.5",
+]
